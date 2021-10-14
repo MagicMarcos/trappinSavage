@@ -77,6 +77,7 @@ app.put('/upVote', (req, res) => {
 		},
 		(err, result) => {
 			if (err) return res.send(err);
+			console.log(result);
 			res.send(result);
 		}
 	);
